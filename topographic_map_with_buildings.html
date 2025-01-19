@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_602582b9c5421991c3485564a31b2ade {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_602582b9c5421991c3485564a31b2ade" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_602582b9c5421991c3485564a31b2ade = L.map(
+                "map_602582b9c5421991c3485564a31b2ade",
+                {
+                    center: [51.675656, 39.131382],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_602582b9c5421991c3485564a31b2ade);
+
+            
+
+        
+    
+            var tile_layer_3773f2577a83a39b61fdefd8008a59f1 = L.tileLayer(
+                "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 17,
+  "maxNativeZoom": 17,
+  "noWrap": false,
+  "attribution": "Map data: \u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors, \u003ca href=\"http://viewfinderpanoramas.org\"\u003eSRTM\u003c/a\u003e | Map style: \u0026copy; \u003ca href=\"https://opentopomap.org\"\u003eOpenTopoMap\u003c/a\u003e (\u003ca href=\"https://creativecommons.org/licenses/by-sa/3.0/\"\u003eCC-BY-SA\u003c/a\u003e)",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3773f2577a83a39b61fdefd8008a59f1.addTo(map_602582b9c5421991c3485564a31b2ade);
+        
+    
+            var marker_40916eb60b79c61d03b8509563a787b6 = L.marker(
+                [51.675656, 39.131382],
+                {
+}
+            ).addTo(map_602582b9c5421991c3485564a31b2ade);
+        
+    
+            var icon_032502f46c5a100fe0c60381942e7acb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_40916eb60b79c61d03b8509563a787b6.setIcon(icon_032502f46c5a100fe0c60381942e7acb);
+        
+    
+        var popup_4563206d07d4abcce21465fa740a5275 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb532e82546a704314a5a40d1576c446 = $(`<div id="html_fb532e82546a704314a5a40d1576c446" style="width: 100.0%; height: 100.0%;"><b>Назва:</b> ЖК Инстеп.Скандинавия<br><b>Адреса:</b> Семилукская, 48<br><b>Кількість поверхів:</b> 18</div>`)[0];
+                popup_4563206d07d4abcce21465fa740a5275.setContent(html_fb532e82546a704314a5a40d1576c446);
+            
+        
+
+        marker_40916eb60b79c61d03b8509563a787b6.bindPopup(popup_4563206d07d4abcce21465fa740a5275)
+        ;
+
+        
+    
+    
+            marker_40916eb60b79c61d03b8509563a787b6.bindTooltip(
+                `<div>
+                     ЖК Инстеп.Скандинавия
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_41b8d92067ca34e81df4865eaead3a15 = L.polygon(
+                [[51.675475999999996, 39.131202], [51.675475999999996, 39.131562], [51.675836, 39.131562], [51.675836, 39.131202]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_602582b9c5421991c3485564a31b2ade);
+        
+    
+            polygon_41b8d92067ca34e81df4865eaead3a15.bindTooltip(
+                `<div>
+                     Силует будинку: ЖК Инстеп.Скандинавия
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d6c2ea020990e7fcf7b68aba783e9042 = L.marker(
+                [51.71902, 39.187122],
+                {
+}
+            ).addTo(map_602582b9c5421991c3485564a31b2ade);
+        
+    
+            var icon_8c77032f3a71b6100cc53b8ea08e2134 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d6c2ea020990e7fcf7b68aba783e9042.setIcon(icon_8c77032f3a71b6100cc53b8ea08e2134);
+        
+    
+        var popup_dd54e52b487e38e68d08132aa6958cab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09fe2e5d16f67025f0627b6804ae899f = $(`<div id="html_09fe2e5d16f67025f0627b6804ae899f" style="width: 100.0%; height: 100.0%;"><b>Назва:</b> ЖК Яблоневые сады-1<br><b>Адреса:</b> Загоровского<br><b>Кількість поверхів:</b> 22</div>`)[0];
+                popup_dd54e52b487e38e68d08132aa6958cab.setContent(html_09fe2e5d16f67025f0627b6804ae899f);
+            
+        
+
+        marker_d6c2ea020990e7fcf7b68aba783e9042.bindPopup(popup_dd54e52b487e38e68d08132aa6958cab)
+        ;
+
+        
+    
+    
+            marker_d6c2ea020990e7fcf7b68aba783e9042.bindTooltip(
+                `<div>
+                     ЖК Яблоневые сады-1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_8b0a5ba4015fe529f02bc77869f4afa4 = L.polygon(
+                [[51.7188, 39.186902], [51.7188, 39.187342], [51.71924, 39.187342], [51.71924, 39.186902]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_602582b9c5421991c3485564a31b2ade);
+        
+    
+            polygon_8b0a5ba4015fe529f02bc77869f4afa4.bindTooltip(
+                `<div>
+                     Силует будинку: ЖК Яблоневые сады-1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_efe77e50f89f84bf41df074d460aeb65 = L.marker(
+                [51.634299, 39.295742],
+                {
+}
+            ).addTo(map_602582b9c5421991c3485564a31b2ade);
+        
+    
+            var icon_ae73e8a68d459dd4f1fec45d36910496 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_efe77e50f89f84bf41df074d460aeb65.setIcon(icon_ae73e8a68d459dd4f1fec45d36910496);
+        
+    
+        var popup_08efe9284660317e5ecc657c5b7f21d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_94c1c1713b2096345cd0038aa2f50d33 = $(`<div id="html_94c1c1713b2096345cd0038aa2f50d33" style="width: 100.0%; height: 100.0%;"><b>Назва:</b> ЖК Озерки-1<br><b>Адреса:</b> переулок Калашникова, 2 <br><b>Кількість поверхів:</b> 19</div>`)[0];
+                popup_08efe9284660317e5ecc657c5b7f21d7.setContent(html_94c1c1713b2096345cd0038aa2f50d33);
+            
+        
+
+        marker_efe77e50f89f84bf41df074d460aeb65.bindPopup(popup_08efe9284660317e5ecc657c5b7f21d7)
+        ;
+
+        
+    
+    
+            marker_efe77e50f89f84bf41df074d460aeb65.bindTooltip(
+                `<div>
+                     ЖК Озерки-1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_a59a417424ab8a66d049cc21705968f6 = L.polygon(
+                [[51.634108999999995, 39.295551999999994], [51.634108999999995, 39.295932], [51.634489, 39.295932], [51.634489, 39.295551999999994]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_602582b9c5421991c3485564a31b2ade);
+        
+    
+            polygon_a59a417424ab8a66d049cc21705968f6.bindTooltip(
+                `<div>
+                     Силует будинку: ЖК Озерки-1
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0994b99e978328210a552ca81ed9b6d6 = L.marker(
+                [51.634995, 39.295605],
+                {
+}
+            ).addTo(map_602582b9c5421991c3485564a31b2ade);
+        
+    
+            var icon_02b7f6171b4a7fbffd03850c4866ac67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0994b99e978328210a552ca81ed9b6d6.setIcon(icon_02b7f6171b4a7fbffd03850c4866ac67);
+        
+    
+        var popup_5a1ddd6438763a73599cafaeed9b4018 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56ce41ff71876bfc6ec456c2fd2aa197 = $(`<div id="html_56ce41ff71876bfc6ec456c2fd2aa197" style="width: 100.0%; height: 100.0%;"><b>Назва:</b> ЖК Озерки-2<br><b>Адреса:</b> переулок Калашникова, 4<br><b>Кількість поверхів:</b> 19</div>`)[0];
+                popup_5a1ddd6438763a73599cafaeed9b4018.setContent(html_56ce41ff71876bfc6ec456c2fd2aa197);
+            
+        
+
+        marker_0994b99e978328210a552ca81ed9b6d6.bindPopup(popup_5a1ddd6438763a73599cafaeed9b4018)
+        ;
+
+        
+    
+    
+            marker_0994b99e978328210a552ca81ed9b6d6.bindTooltip(
+                `<div>
+                     ЖК Озерки-2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var polygon_9959b6ca35e740f30d7bf877c9100866 = L.polygon(
+                [[51.634805, 39.295415], [51.634805, 39.295795000000005], [51.63518500000001, 39.295795000000005], [51.63518500000001, 39.295415]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_602582b9c5421991c3485564a31b2ade);
+        
+    
+            polygon_9959b6ca35e740f30d7bf877c9100866.bindTooltip(
+                `<div>
+                     Силует будинку: ЖК Озерки-2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
